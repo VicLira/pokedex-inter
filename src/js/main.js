@@ -1,4 +1,5 @@
 import "../css/global.css";
+import pokeApi from "./poke-api";
 
 function convertPokemonToHtml(pokemon) {
   return `
