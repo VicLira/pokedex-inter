@@ -3,7 +3,7 @@ import pokeApi from "./poke-api";
 
 function convertPokemonToHtml(pokemon) {
   return `
-    <li class="pokemon ${pokemon.type}">
+    <li class="pokemon ${pokemon.types[0]}">
       <span class="number">#${pokemon.number}</span>
         <span class="name">${pokemon.name}</span>
           <div class="detail">
