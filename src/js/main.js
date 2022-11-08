@@ -1,4 +1,3 @@
-
 import "../css/global.css";
 
 function convertPokemonToHtml(pokemon) {
