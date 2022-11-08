@@ -30,8 +30,5 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
     .then((jsonBody) => jsonBody.results)
     .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
     .then((detailRequests) => Promise.all(detailRequests))
-    .then((pokemonsDetails) => pokemonsDetails)
-  // 3. conversão em json
-  // 4. Fazer um request dos detalhes
-  // 5.
+    .then((pokemonsDetails) => console.log(pokemonsDetails))
 }
