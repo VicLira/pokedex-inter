@@ -1,7 +1,5 @@
 
 import "../css/global.css";
-import './pokemon-model.js';
-import './poke-api.js';
 
 function convertPokemonToHtml(pokemon) {
   return `
