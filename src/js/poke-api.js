@@ -1,3 +1,8 @@
+
+import "../css/global.css";
+import './pokemon-model.js';
+import './poke-api.js';
+
 const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
