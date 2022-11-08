@@ -1,3 +1,5 @@
+import Pokemon from "./pokemon-model"
+
 
 const pokeApi = {}
 
