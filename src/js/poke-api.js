@@ -33,7 +33,7 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
     .then((jsonBody) => jsonBody.results)
     .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
     .then((detailRequests) => Promise.all(detailRequests))
-    .then((pokemonsDetails) => console.log(pokemonsDetails))
+    .then((pokemonsDetails) => pokemonsDetails)
 }
 
 export default pokeApi;
