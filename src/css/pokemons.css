@@ -83,7 +83,12 @@
   padding: 1rem 1rem;
   border-radius: 1rem;
   color: #fff;
+  cursor: pointer;
 }
+
+  .pokemon:hover {
+    filter: brightness(0.8);
+  }
 
 .pokemon .number {
   color: #000;

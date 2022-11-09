@@ -12,8 +12,8 @@ const maxRecords = 48;
 
 
 function loadPokemonItems(offset, limit) {
-
   pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
+    
     const newHtml = pokemons.map(pokemon => 
       `<li class="pokemon ${pokemon.types[0]}">
         <span class="number">#${pokemon.number}</span>
@@ -85,4 +85,19 @@ function loadMore() {
   })
 }
 
+
+function openModal(pokemon) {
+  console.log(pokemon)
+  console.log(pokemon.children)
+}
+
+setTimeout(() => {
+  document.querySelectorAll('.pokemon').forEach((pokemon) =>
+    pokemon.addEventListener('click', (event) => {
+      // console.log(event.target.parentElement);
+      const pokemon = event.target.parentElement
+      openModal(pokemon)
+    })
+  );
+}, 1000)
 
