@@ -1,4 +1,4 @@
-@import "pokemons.css";
+@import "./pokemons.css";
 
 * {
   font-family: "Roboto", sans-serif;
