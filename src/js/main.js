@@ -65,6 +65,7 @@ function loadMore() {
   loadMoreButton.addEventListener('click', () => {
     offset += limit;
   
+    asyncCall();
     const qtdRecordNextPage = offset + limit;
   
     if (qtdRecordNextPage >= maxRecords){

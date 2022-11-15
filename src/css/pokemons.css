@@ -171,10 +171,13 @@
   opacity: .8;
 }
 
-.pagination button {
+.pagination .pagination-btn {
+  text-decoration: none;
+  color: #fff;
   background-color: #6c79db;
   border: none;
   border-radius: 1rem;
+  padding: 10px 30px;
   color: '#fff';
 }
 
