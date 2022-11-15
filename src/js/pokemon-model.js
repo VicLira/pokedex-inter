@@ -4,6 +4,9 @@ class Pokemon {
   type
   types = []
   photo
+  weight
+  height
+  moves = []
 }
 
 export default Pokemon;

@@ -50,9 +50,42 @@
         
       </section>
 
-      <div class="popup-wrapper">
-        
+      <div id="modal" class="modal-wrapper">
+        <div class="modal">
+          <button 
+            id="close-modal" 
+            class="close-modal" 
+          >X</button>
+          <img
+            src="${pokemon.photo}"
+            alt="${pokemon.name}"
+          />
+          <div class="modal-content">
+            <h1 id="modal-name" class="pokemon-name">${pokemon.name}</h1>
+            <table>
+              <thead>	
+                <tr>		
+                  <th>Peso</th>
+                  <th>Altura</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="modal-weight">${pokemon.weight}</td>
+                  <td id="modal-height">${pokemon.height}</td>
+                </tr>
+              </tbody>
+            </table>
+            <ol id="moves" class="moves">
+              <li class="move">${pokemon.move}</li>
+              <li class="move">${pokemon.moves[2]}</li>
+              <li class="move">${pokemon.moves[3]}</li>
+              <li class="move">${pokemon.moves[4]}</li>
+            </ol>
+          </div>
+        </div>
       </div>
+
     </div>
 
     <script type="module" src="./src/js/main.js"></script>
