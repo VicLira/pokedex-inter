@@ -27,7 +27,7 @@ const maxRecords = 48;
 function loadPokemonItems(offset, limit) {
   pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
     
-    
+    asyncCall();
     const newHtml = pokemons.map(pokemon => 
       `
       <li class="pokemon ${pokemon.type}">
